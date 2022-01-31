@@ -1,6 +1,12 @@
 # arduino-humidistat
 
-Humidistat using an Arduino Uno, DHT11 Sensor, and DIY Mains Power Relay
+Humidistat using an Arduino Uno, DHT11 Sensor, and DIY Mains Power Relay.
+
+![image](https://user-images.githubusercontent.com/479475/151743879-ba64dd4a-8a8c-4eb3-91bb-fc9042de080a.png)
+
+Inside the receptacle box is a relay which switches up to 250V using 5V.
+
+![image](https://user-images.githubusercontent.com/479475/151744395-a54d7fb8-01b9-43ac-b317-42628f5c804f.png)
 
 ## Variables
 
