@@ -10,7 +10,7 @@ Inside the receptacle box is a relay which switches up to 250V using 5V.
 
 ## Variables
 
-* `swing`: The size of the relative Humidity (RH) range to target. A larger swing allows for more variation in the RH, while reducing the amount of switching. A small swing maintains the RH more precisely/consistently, while increasing the amount of switching. Example, a `targetHumidityPct` of 50 and a swing of 4 would maintain RH between 48 and 52%.
+* `swing`: The size of the relative Humidity (RH) range to target. A larger swing allows for more variation in the RH, while reducing the amount of switching. A small swing maintains the RH more precisely/consistently, while increasing the amount of switching. Example, a `targetHumidityPct` of 50 and a `swing` of 4 would maintain RH between 48 and 52%.
 * `targetHumidityPct`: Target humidity percentage.
 * `slope`: The slope of the line as calculated from two-point salt calibration.
 * `yIntercept`: The y-intercept as calculated from two-point salt calibration.
