@@ -35,13 +35,13 @@ Monitor serial output over USB and look for lines like the following:
 
 It doesn't matter what the values are, and your sensor will not be calibrated yet, so both "Humidity" values are likely to be off a bit.
 
-For future reference, the first humidity value, "Sensor-Claimed Humidity" is the one claimed by the sensor. The second, corrected value will reflect the actual humidity once the sensor is calibrated.
+For future reference, the first humidity value, "Sensor-Claimed Humidity," is the one claimed by the sensor. The second, corrected value will reflect the actual humidity once the sensor is calibrated.
 
 ## Calibration
 
-The sensor can be calibrated with moistened CaCl (ice melt pellets) and NaCl (kosher salt).
+The sensor can be calibrated with moistened CaCl (e.g., ice melt pellets) and NaCl (e.g., kosher salt).
 
-For each salt, in turn, the following procedure was followed:
+For each salt, in turn, the following procedure is performed:
 
 * In a plastic bottle cap (from a soda bottle or similar) cover its bottom with water (~1ml; tap water is fine). Add enough salt until it is heaped above the lip's level but is not apt to spill.
 * In an airtight container (plastic bag, tupperware, or glass casserole dish covered with plastic wrap--my choice, etc.) add:
@@ -55,7 +55,7 @@ For each salt, in turn, the following procedure was followed:
 
 ## Calculating Calibration
 
-At room temperature aturated CaCl provides a consistent 33% RH, whereas saturated NaCL provides a consistent 75% RH.
+At room temperature, saturated CaCl provides a consistent 33% RH, whereas saturated NaCL provides a consistent 75% RH.
 
 To calculate calibration values:
 
