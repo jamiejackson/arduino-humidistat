@@ -1,4 +1,4 @@
-# arduino-humidistat
+# Arduino Humidistat
 
 Humidistat using an Arduino Uno, DHT11 Sensor, and DIY Mains Power Relay.
 
