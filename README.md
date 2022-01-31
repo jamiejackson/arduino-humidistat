@@ -41,6 +41,27 @@ For each salt, in turn, the following procedure was followed:
 * In an airtight container (plastic bag, tupperware, or glass casserole dish covered with plastic wrap--my choice, etc.) add:
   * Prepared bottle cap
   * Sensor with its leads protruding from the container
+* Leave the system at stable room temperature. (Do not place near windows, exterior doors, or vents.)
 * Wait for equilibrium to be reached. The longer the wait (up to a point) the more accurate the measurement will be. Note:
   * CaCl seems to stabilize more quickly: 4-6 hours.
-  * NaCl seems to stabilize more slowly: 12-24 hours.
+  * NaCl seems to stabilize more slowly: 12-24 hours. (12 hours is probably fine if measurments have been stable for an hour. Beyond 12 hours, there are diminishing returns on precision.)
+* Record the sensor-claimed humidity from the serial output.
+
+## Calculating Calibration
+
+At room temperature aturated CaCl provides a consistent 33% RH, whereas saturated NaCL provides a consistent 75% RH.
+
+To calculate calibration values:
+
+`slope` = ( `sensor_claimed_humidity_of_nacl` - `sensor_claimed_humidity_of_cacl` ) / ( 75 - 33 )
+
+`y_intercept` = `sensor_claimed_humidity_of_cacl` - ( `slope` * 33 )
+
+**These values are added to their respective variables in the `getCorrectedHumidity` function.**
+
+In my case, I calculated the following, which is why these values are reflected in the sketch:
+
+* `slope` = `1.00` (Note, this was a coincidence; a given sensor will have a slope _close_ to 1 but it could be off by as much as ±0.15.)
+* `y_intercept` = `-7.72` (This sensor reads quite low--outside of the stated accuracy of ±5％ RH.)
+
+
