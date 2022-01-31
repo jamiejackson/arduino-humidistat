@@ -46,9 +46,11 @@ void setup() {
   dht.begin();
 }
 
-float calibrateHumidity(float claimedHumidity) {
-  //return claimedHumidity + 13.5;
-  return claimedHumidity * 1.55;
+float getCorrectedHumidity(float claimedHumidity) {
+  float slope = 1.00;
+  float yIntercept = -7.72;
+  float actualHumidity = claimedHumidity/slope - yIntercept;
+  return actualHumidity;
 }
 
 
@@ -78,7 +80,7 @@ void loop() {
   // Reading temperature or humidity takes about 250 milliseconds!
   // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
   float sh = dht.readHumidity();
-  float h = calibrateHumidity(sh);
+  float h = getCorrectedHumidity(sh);
   // Read temperature as Celsius (the default)
   float t = dht.readTemperature();
   // Read temperature as Fahrenheit (isFahrenheit = true)
