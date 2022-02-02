@@ -2,6 +2,8 @@
 
 Humidistat using an Arduino Uno, DHT11 Sensor, and DIY Mains Power Relay.
 
+The humidifier is plugged into the receptacle, which is toggled by the Arduino when high or low humidity is detected.
+
 ![image](https://user-images.githubusercontent.com/479475/151743879-ba64dd4a-8a8c-4eb3-91bb-fc9042de080a.png)
 
 Inside the receptacle box is a relay which switches up to 250V using 5V.
@@ -50,7 +52,7 @@ For each salt, in turn, the following procedure is performed:
 * Leave the system at stable room temperature. (Do not place near windows, exterior doors, or vents.)
 * Wait for equilibrium to be reached. The longer the wait (up to a point) the more accurate the measurement will be. Note:
   * CaCl seems to stabilize more quickly: 4-6 hours.
-  * NaCl seems to stabilize more slowly: 12-24 hours. (12 hours is probably fine if measurments have been stable for an hour. Beyond 12 hours, there are diminishing returns on precision.)
+  * NaCl seems to stabilize more slowly: 12-24 hours. (12 hours is probably fine if measurements have been stable for an hour. Beyond 12 hours, there are diminishing returns on precision.)
 * Record the sensor-claimed humidity from the serial output.
 
 ## Calculating Calibration
